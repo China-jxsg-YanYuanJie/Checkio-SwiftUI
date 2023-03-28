@@ -1,0 +1,18 @@
+PODS:
+  - NXNavigationExtension/Sources (4.1.4)
+  - NXNavigationExtension/SwiftUI (4.1.4):
+    - NXNavigationExtension/Sources
+
+DEPENDENCIES:
+  - NXNavigationExtension/SwiftUI
+
+SPEC REPOS:
+  trunk:
+    - NXNavigationExtension
+
+SPEC CHECKSUMS:
+  NXNavigationExtension: 0adad6d7e9cefc6c80b94417d315cdff73876a42
+
+PODFILE CHECKSUM: 579f36c56df96939843d173bb6e42e105aee9fec
+
+COCOAPODS: 1.11.3
