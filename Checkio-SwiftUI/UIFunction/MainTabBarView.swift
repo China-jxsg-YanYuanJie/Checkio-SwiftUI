@@ -10,13 +10,27 @@ import SwiftUI
 import SwiftUIPathAnimations
 enum Tab : String ,CaseIterable {
     case home = "Home"
-    case label = "Label"
+    case product = "Product"
     case position = "Position"
     case found = "Found"
     case my = "My"
+    var icon: String{
+        switch self {
+        case .home:
+            return "ic_com_tabbar_home"
+        case .product:
+            return "ic_com_tabbar_product"
+        case .position:
+            return "ic_com_tabbar_home"
+        case .found:
+            return "ic_com_tabbar_home"
+        case .my:
+            return "ic_com_tabbar_home"
+        }
+    }
 }
 struct MainTabBarView: View {
-    @State var currentTab: Tab = .home
+    @State var currentTab: Tab = .product
     // MARK: Hiding Native One
     // 隐藏Native One
     init(){
@@ -28,17 +42,15 @@ struct MainTabBarView: View {
                 // MARK: Need to Apply BG For Each Tab View
 
                 // 需要为每个标签视图应用BG
-                HomeView()
-                .listStyle(.plain)
-                .tag(Tab.home)
-                Text("Label")
-                    .tag(Tab.label)
-                Text("Position")
-                    .tag(Tab.position)
-                Text("Found")
-                    .tag(Tab.found)
-                Text("My")
-                    .tag(Tab.my)
+                HomeView().tag(Tab.home)
+                
+                ProductView().tag(Tab.product)
+                
+                Text("Position").tag(Tab.position)
+                
+                Text("Found").tag(Tab.found)
+                
+                Text("My").tag(Tab.my)
             }
             PathTabBar(currentTab: $currentTab)
         }
@@ -76,7 +88,7 @@ struct PathTabBar: View{
                             Circle()
                                 .foregroundColor(.white)
                                 .frame(width: icon_width, height: icon_width)
-                            if let image = AppImageAssets.ic_com_tabbar_home.svgImage(size: 24, color: .white) {
+                            if let image = AppImageAssets(rawValue: tab.icon)?.svgImage(size: 24, color: .white) {
                                 Image(uiImage: image)
                                     .foregroundColor(color)
                                     .frame(width: icon_width, height: icon_width, alignment: .center)
