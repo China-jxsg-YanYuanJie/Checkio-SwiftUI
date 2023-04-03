@@ -6,7 +6,7 @@ target 'Checkio-SwiftUI' do
   use_frameworks!
 
   # Pods for Checkio-SwiftUI
-  pod 'NXNavigationExtension/SwiftUI'
+#  pod 'NXNavigationExtension/SwiftUI'
 
   target 'Checkio-SwiftUITests' do
     inherit! :search_paths
