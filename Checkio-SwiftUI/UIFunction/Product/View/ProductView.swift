@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import SwiftUIPathAnimations
+
 struct ProductView: View {
     @State var currentPage = 0
     var body: some View {

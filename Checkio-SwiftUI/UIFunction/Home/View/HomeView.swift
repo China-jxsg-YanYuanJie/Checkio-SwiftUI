@@ -7,7 +7,7 @@
 
 import SwiftUI
 import NXNavigationExtension
-import SwiftUIPathAnimations
+
 struct HomeView: View {
     var columns: [GridItem] = [GridItem(alignment:.leading)]
     
