@@ -29,7 +29,8 @@
 		9A2BA76229D53B850067599D /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA76129D53B850067599D /* ProductView.swift */; };
 		9A2BA76B29D6E50C0067599D /* ProductHeaderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA76A29D6E50B0067599D /* ProductHeaderTabView.swift */; };
 		9A2BA76D29D6E54F0067599D /* ProductTabPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA76C29D6E54F0067599D /* ProductTabPageView.swift */; };
-		9A2BA77329DAC7EE0067599D /* NXNavigationExtensionSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A2BA77229DAC7EE0067599D /* NXNavigationExtensionSwiftUI */; };
+		9A2BA77629DAC8F70067599D /* NXNavigationExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 9A2BA77529DAC8F70067599D /* NXNavigationExtension */; };
+		9A2BA77829DAC8F70067599D /* NXNavigationExtensionSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A2BA77729DAC8F70067599D /* NXNavigationExtensionSwiftUI */; };
 		9A42F4EA29D0189A00586E2A /* PeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4E929D0189A00586E2A /* PeriodView.swift */; };
 		9A42F4EC29D018F600586E2A /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4EB29D018F600586E2A /* CircleProgress.swift */; };
 		9A42F4EE29D0198900586E2A /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4ED29D0198900586E2A /* RoundedCorners.swift */; };
@@ -106,10 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2BA77329DAC7EE0067599D /* NXNavigationExtensionSwiftUI in Frameworks */,
 				9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */,
 				9AB194E829D4307300D997B6 /* SwiftUIPathAnimations in Frameworks */,
+				9A2BA77829DAC8F70067599D /* NXNavigationExtensionSwiftUI in Frameworks */,
 				9AB194F029D439AC00D997B6 /* Logging in Frameworks */,
+				9A2BA77629DAC8F70067599D /* NXNavigationExtension in Frameworks */,
 				17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +329,8 @@
 				9AB194E729D4307300D997B6 /* SwiftUIPathAnimations */,
 				9AB194EA29D4308700D997B6 /* SVGKitSwift */,
 				9AB194EF29D439AC00D997B6 /* Logging */,
-				9A2BA77229DAC7EE0067599D /* NXNavigationExtensionSwiftUI */,
+				9A2BA77529DAC8F70067599D /* NXNavigationExtension */,
+				9A2BA77729DAC8F70067599D /* NXNavigationExtensionSwiftUI */,
 			);
 			productName = "Checkio-SwiftUI";
 			productReference = 9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */;
@@ -407,10 +410,10 @@
 			mainGroup = 9A1617DC29C1AF6F00B29550;
 			packageReferences = (
 				9AB194E629D4307300D997B6 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */,
-				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */,
-				9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */,
+				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */,
+				9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				9AB194EE29D439AC00D997B6 /* XCRemoteSwiftPackageReference "swift-log" */,
-				9A2BA77129DAC7ED0067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */,
+				9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */,
 			);
 			productRefGroup = 9A1617E629C1AF6F00B29550 /* Products */;
 			projectDirPath = "";
@@ -895,7 +898,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9A2BA77129DAC7ED0067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */ = {
+		9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/l1Dan/NXNavigationExtension";
 			requirement = {
@@ -911,7 +914,7 @@
 				kind = branch;
 			};
 		};
-		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */ = {
+		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
 			requirement = {
@@ -919,7 +922,7 @@
 				kind = branch;
 			};
 		};
-		9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */ = {
+		9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
 			requirement = {
@@ -938,9 +941,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9A2BA77229DAC7EE0067599D /* NXNavigationExtensionSwiftUI */ = {
+		9A2BA77529DAC8F70067599D /* NXNavigationExtension */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A2BA77129DAC7ED0067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
+			package = 9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
+			productName = NXNavigationExtension;
+		};
+		9A2BA77729DAC8F70067599D /* NXNavigationExtensionSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
 			productName = NXNavigationExtensionSwiftUI;
 		};
 		9AB194E729D4307300D997B6 /* SwiftUIPathAnimations */ = {
@@ -950,7 +958,7 @@
 		};
 		9AB194EA29D4308700D997B6 /* SVGKitSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */;
+			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */;
 			productName = SVGKitSwift;
 		};
 		9AB194EF29D439AC00D997B6 /* Logging */ = {

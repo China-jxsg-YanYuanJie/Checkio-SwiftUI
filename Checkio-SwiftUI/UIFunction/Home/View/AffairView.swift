@@ -179,9 +179,8 @@ struct AffairItemView: View {
                     .scaledToFit()
                     .frame(maxWidth: circleWidth-10, maxHeight: circleWidth-10)
             }
-            Text(info.style.stringValue)
-                .font(.system(size: 14, weight: .bold, design: .rounded))
-                .foregroundColor(.white)
+            
+            TitleStyleView(title: info.style.stringValue)
                 .frame(width: 20, height: 20)
                 .background(
                     RoundedCorners(color: color, tl: 4, tr: 4, bl: 4, br: 4)
@@ -189,5 +188,42 @@ struct AffairItemView: View {
                 .offset(x: 20, y: 20)
         }
         .offset(x: 8, y: 8)
+    }
+}
+struct StyleCircleView:View{
+    var color: Color
+    var title: String
+    var circleWidth = 50.0
+    var titleStyleViewWidth = 20.0
+    var body: some View{
+        ZStack(alignment: .center){
+            
+            
+            Circle()
+                .foregroundColor(color.opacity(0.3))
+                .frame(width: circleWidth, height: circleWidth, alignment: .top)
+                .shadow(color: color.opacity(0.8),radius: 5,x: 0.0,y: 5.0)
+            if let image = AppImageAssets.ic_com_flamingo.svgImage?.uiImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: circleWidth-10, maxHeight: circleWidth-10)
+            }
+            
+            TitleStyleView(title: title)
+                .frame(width: titleStyleViewWidth, height: titleStyleViewWidth)
+                .background(
+                    RoundedCorners(color: color, tl: 4, tr: 4, bl: 4, br: 4)
+                )
+                .offset(x: (circleWidth-titleStyleViewWidth)/2, y: (circleWidth-titleStyleViewWidth)/2)
+        }
+    }
+}
+struct TitleStyleView:View{
+    var title: String
+    var body: some View{
+        Text(title)
+            .font(.system(size: 14, weight: .bold, design: .rounded))
+            .foregroundColor(.white)
     }
 }

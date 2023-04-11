@@ -7,8 +7,8 @@
 
 import UIKit
 import SwiftUI
+import NXNavigationExtensionSwiftUI
 import NXNavigationExtension
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

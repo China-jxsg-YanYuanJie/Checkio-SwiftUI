@@ -94,6 +94,7 @@ struct PathTabBar: View{
                                     .frame(width: icon_width, height: icon_width, alignment: .center)
                             }
                         }
+//                        .offset(x:0, y:xx)
                         .position(x: width / 5 / 2, y: xx)
                         .animation(.spring(response: 1, dampingFraction: 0.4, blendDuration: 2), value: currentTab)
                     }

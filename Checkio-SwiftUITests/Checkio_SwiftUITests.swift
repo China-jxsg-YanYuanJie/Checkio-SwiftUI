@@ -25,6 +25,15 @@ class Checkio_SwiftUITests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
         print("xxxx")
+        
+        let arr = [1,2]
+        let arr1 = arr.filter { inde in
+            inde == 1
+        }
+        for (idex,int) in arr.enumerated() {
+            
+        }
+        print(arr1)
     }
 
     func testPerformanceExample() throws {
