@@ -788,6 +788,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CN9G5YQZHA;
 				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_FILE = "Checkio-SwiftUI/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Checkio;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -818,6 +819,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CN9G5YQZHA;
 				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_FILE = "Checkio-SwiftUI/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Checkio;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -964,8 +966,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				kind = exactVersion;
+				version = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
