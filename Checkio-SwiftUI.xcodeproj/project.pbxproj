@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01FEB5D4E9133EDF2DD5E81C /* Pods_Checkio_SwiftUI_Checkio_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7BED10BAD38FCA8BC026A0 /* Pods_Checkio_SwiftUI_Checkio_SwiftUIUITests.framework */; };
 		17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F79D694684752F9908AFA8 /* Pods_Checkio_SwiftUI.framework */; };
+		9A0F729C29E54C2200A2A24D /* SwiftUIPathAnimations in Frameworks */ = {isa = PBXBuildFile; productRef = 9A0F729B29E54C2200A2A24D /* SwiftUIPathAnimations */; };
 		9A1617E929C1AF6F00B29550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617E829C1AF6F00B29550 /* AppDelegate.swift */; };
 		9A1617EB29C1AF7000B29550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617EA29C1AF7000B29550 /* SceneDelegate.swift */; };
 		9A1617ED29C1AF7000B29550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617EC29C1AF7000B29550 /* ViewController.swift */; };
@@ -29,8 +30,6 @@
 		9A2BA76229D53B850067599D /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA76129D53B850067599D /* ProductView.swift */; };
 		9A2BA76B29D6E50C0067599D /* ProductHeaderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA76A29D6E50B0067599D /* ProductHeaderTabView.swift */; };
 		9A2BA76D29D6E54F0067599D /* ProductTabPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA76C29D6E54F0067599D /* ProductTabPageView.swift */; };
-		9A2BA77629DAC8F70067599D /* NXNavigationExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 9A2BA77529DAC8F70067599D /* NXNavigationExtension */; };
-		9A2BA77829DAC8F70067599D /* NXNavigationExtensionSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A2BA77729DAC8F70067599D /* NXNavigationExtensionSwiftUI */; };
 		9A42F4EA29D0189A00586E2A /* PeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4E929D0189A00586E2A /* PeriodView.swift */; };
 		9A42F4EC29D018F600586E2A /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4EB29D018F600586E2A /* CircleProgress.swift */; };
 		9A42F4EE29D0198900586E2A /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4ED29D0198900586E2A /* RoundedCorners.swift */; };
@@ -38,7 +37,6 @@
 		9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */; };
 		9A7BAEA429CC5096008E6FDF /* ImageResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */; };
 		9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB194EA29D4308700D997B6 /* SVGKitSwift */; };
-		9AB194F029D439AC00D997B6 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB194EF29D439AC00D997B6 /* Logging */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,10 +106,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */,
-				9A2BA77829DAC8F70067599D /* NXNavigationExtensionSwiftUI in Frameworks */,
-				9AB194F029D439AC00D997B6 /* Logging in Frameworks */,
-				9A2BA77629DAC8F70067599D /* NXNavigationExtension in Frameworks */,
 				17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */,
+				9A0F729C29E54C2200A2A24D /* SwiftUIPathAnimations in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +324,7 @@
 			name = "Checkio-SwiftUI";
 			packageProductDependencies = (
 				9AB194EA29D4308700D997B6 /* SVGKitSwift */,
-				9AB194EF29D439AC00D997B6 /* Logging */,
-				9A2BA77529DAC8F70067599D /* NXNavigationExtension */,
-				9A2BA77729DAC8F70067599D /* NXNavigationExtensionSwiftUI */,
+				9A0F729B29E54C2200A2A24D /* SwiftUIPathAnimations */,
 			);
 			productName = "Checkio-SwiftUI";
 			productReference = 9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */;
@@ -410,10 +404,8 @@
 			);
 			mainGroup = 9A1617DC29C1AF6F00B29550;
 			packageReferences = (
-				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */,
-				9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */,
-				9AB194EE29D439AC00D997B6 /* XCRemoteSwiftPackageReference "swift-log" */,
-				9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */,
+				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */,
+				9A0F729A29E54C2200A2A24D /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */,
 			);
 			productRefGroup = 9A1617E629C1AF6F00B29550 /* Products */;
 			projectDirPath = "";
@@ -932,15 +924,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */ = {
+		9A0F729A29E54C2200A2A24D /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/l1Dan/NXNavigationExtension";
+			repositoryURL = "https://github.com/adellibovi/SwiftUI-PathAnimations";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
-		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */ = {
+		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
 			requirement = {
@@ -948,44 +940,18 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.7.4;
-			};
-		};
-		9AB194EE29D439AC00D997B6 /* XCRemoteSwiftPackageReference "swift-log" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-log";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9A2BA77529DAC8F70067599D /* NXNavigationExtension */ = {
+		9A0F729B29E54C2200A2A24D /* SwiftUIPathAnimations */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
-			productName = NXNavigationExtension;
-		};
-		9A2BA77729DAC8F70067599D /* NXNavigationExtensionSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
-			productName = NXNavigationExtensionSwiftUI;
+			package = 9A0F729A29E54C2200A2A24D /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */;
+			productName = SwiftUIPathAnimations;
 		};
 		9AB194EA29D4308700D997B6 /* SVGKitSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */;
+			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */;
 			productName = SVGKitSwift;
-		};
-		9AB194EF29D439AC00D997B6 /* Logging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9AB194EE29D439AC00D997B6 /* XCRemoteSwiftPackageReference "swift-log" */;
-			productName = Logging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
