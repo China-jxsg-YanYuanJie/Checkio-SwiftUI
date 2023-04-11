@@ -15,6 +15,7 @@
 		9A0F72AA29E5602D00A2A24D /* AnimatableDataSimilarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A429E5602D00A2A24D /* AnimatableDataSimilarShape.swift */; };
 		9A0F72AB29E5602D00A2A24D /* Path+VectorArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A529E5602D00A2A24D /* Path+VectorArithmetic.swift */; };
 		9A0F72AC29E5602D00A2A24D /* SimilarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A629E5602D00A2A24D /* SimilarShape.swift */; };
+		9A0F72AF29E5705600A2A24D /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A0F72AE29E5705600A2A24D /* SVGKitSwift */; };
 		9A1617E929C1AF6F00B29550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617E829C1AF6F00B29550 /* AppDelegate.swift */; };
 		9A1617EB29C1AF7000B29550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617EA29C1AF7000B29550 /* SceneDelegate.swift */; };
 		9A1617ED29C1AF7000B29550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617EC29C1AF7000B29550 /* ViewController.swift */; };
@@ -41,7 +42,6 @@
 		9A42F4F029D019E000586E2A /* AffairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4EF29D019E000586E2A /* AffairView.swift */; };
 		9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */; };
 		9A7BAEA429CC5096008E6FDF /* ImageResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */; };
-		9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB194EA29D4308700D997B6 /* SVGKitSwift */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */,
+				9A0F72AF29E5705600A2A24D /* SVGKitSwift in Frameworks */,
 				17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +355,7 @@
 			);
 			name = "Checkio-SwiftUI";
 			packageProductDependencies = (
-				9AB194EA29D4308700D997B6 /* SVGKitSwift */,
+				9A0F72AE29E5705600A2A24D /* SVGKitSwift */,
 			);
 			productName = "Checkio-SwiftUI";
 			productReference = 9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */;
@@ -435,7 +435,7 @@
 			);
 			mainGroup = 9A1617DC29C1AF6F00B29550;
 			packageReferences = (
-				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */,
+				9A0F72AD29E5705600A2A24D /* XCRemoteSwiftPackageReference "SVGKit" */,
 			);
 			productRefGroup = 9A1617E629C1AF6F00B29550 /* Products */;
 			projectDirPath = "";
@@ -788,7 +788,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CN9G5YQZHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				GENERATE_PKGINFO_FILE = NO;
+				GENERATE_PKGINFO_FILE = YES;
 				INFOPLIST_FILE = "Checkio-SwiftUI/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Checkio;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -819,7 +819,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CN9G5YQZHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				GENERATE_PKGINFO_FILE = NO;
+				GENERATE_PKGINFO_FILE = YES;
 				INFOPLIST_FILE = "Checkio-SwiftUI/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Checkio;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -962,20 +962,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+		9A0F72AD29E5705600A2A24D /* XCRemoteSwiftPackageReference "SVGKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
 			requirement = {
-				kind = exactVersion;
-				version = 3.0.0;
+				branch = 3.x;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9AB194EA29D4308700D997B6 /* SVGKitSwift */ = {
+		9A0F72AE29E5705600A2A24D /* SVGKitSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			package = 9A0F72AD29E5705600A2A24D /* XCRemoteSwiftPackageReference "SVGKit" */;
 			productName = SVGKitSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
