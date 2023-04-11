@@ -37,7 +37,6 @@
 		9A42F4F029D019E000586E2A /* AffairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4EF29D019E000586E2A /* AffairView.swift */; };
 		9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */; };
 		9A7BAEA429CC5096008E6FDF /* ImageResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */; };
-		9AB194E829D4307300D997B6 /* SwiftUIPathAnimations in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB194E729D4307300D997B6 /* SwiftUIPathAnimations */; };
 		9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB194EA29D4308700D997B6 /* SVGKitSwift */; };
 		9AB194F029D439AC00D997B6 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB194EF29D439AC00D997B6 /* Logging */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
@@ -109,7 +108,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB194EB29D4308700D997B6 /* SVGKitSwift in Frameworks */,
-				9AB194E829D4307300D997B6 /* SwiftUIPathAnimations in Frameworks */,
 				9A2BA77829DAC8F70067599D /* NXNavigationExtensionSwiftUI in Frameworks */,
 				9AB194F029D439AC00D997B6 /* Logging in Frameworks */,
 				9A2BA77629DAC8F70067599D /* NXNavigationExtension in Frameworks */,
@@ -321,6 +319,7 @@
 				9A1617E129C1AF6F00B29550 /* Sources */,
 				9A1617E229C1AF6F00B29550 /* Frameworks */,
 				9A1617E329C1AF6F00B29550 /* Resources */,
+				E4AE838BC7C1D61733DF6E69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,7 +327,6 @@
 			);
 			name = "Checkio-SwiftUI";
 			packageProductDependencies = (
-				9AB194E729D4307300D997B6 /* SwiftUIPathAnimations */,
 				9AB194EA29D4308700D997B6 /* SVGKitSwift */,
 				9AB194EF29D439AC00D997B6 /* Logging */,
 				9A2BA77529DAC8F70067599D /* NXNavigationExtension */,
@@ -365,6 +363,7 @@
 				9A16180129C1AF7200B29550 /* Sources */,
 				9A16180229C1AF7200B29550 /* Frameworks */,
 				9A16180329C1AF7200B29550 /* Resources */,
+				B6E9457E78A41943421C9E28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,9 +410,8 @@
 			);
 			mainGroup = 9A1617DC29C1AF6F00B29550;
 			packageReferences = (
-				9AB194E629D4307300D997B6 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */,
-				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */,
-				9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+				9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */,
+				9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */,
 				9AB194EE29D439AC00D997B6 /* XCRemoteSwiftPackageReference "swift-log" */,
 				9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */,
 			);
@@ -501,6 +499,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B6E9457E78A41943421C9E28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D7054A2A46042BDC406476E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,6 +536,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4AE838BC7C1D61733DF6E69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -908,15 +940,7 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		9AB194E629D4307300D997B6 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adellibovi/SwiftUI-PathAnimations";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+		9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
 			requirement = {
@@ -924,7 +948,7 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+		9AB194ED29D4396E00D997B6 /* XCRemoteSwiftPackageReference "CocoaLumberjack.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
 			requirement = {
@@ -953,14 +977,9 @@
 			package = 9A2BA77429DAC8F70067599D /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
 			productName = NXNavigationExtensionSwiftUI;
 		};
-		9AB194E729D4307300D997B6 /* SwiftUIPathAnimations */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9AB194E629D4307300D997B6 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */;
-			productName = SwiftUIPathAnimations;
-		};
 		9AB194EA29D4308700D997B6 /* SVGKitSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			package = 9AB194E929D4308700D997B6 /* XCRemoteSwiftPackageReference "SVGKit.git" */;
 			productName = SVGKitSwift;
 		};
 		9AB194EF29D439AC00D997B6 /* Logging */ = {
