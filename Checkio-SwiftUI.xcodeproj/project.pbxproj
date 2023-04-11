@@ -67,6 +67,7 @@
 		3B778F85E1DD38A3BE6A3AFC /* Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4F34B0DDE0C87F1BAE4831DD /* Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		752E5D1732B5E219FF6DBCBF /* Pods-Checkio-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		9A0F729929E515DE00A2A24D /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = ci_post_clone.sh; path = ci_scripts/ci_post_clone.sh; sourceTree = "<group>"; };
 		9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkio-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1617E829C1AF6F00B29550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A1617EA29C1AF7000B29550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		9A1617DC29C1AF6F00B29550 = {
 			isa = PBXGroup;
 			children = (
+				9A0F729929E515DE00A2A24D /* ci_post_clone.sh */,
 				9A1617E729C1AF6F00B29550 /* Checkio-SwiftUI */,
 				9A1617FE29C1AF7200B29550 /* Checkio-SwiftUITests */,
 				9A16180829C1AF7200B29550 /* Checkio-SwiftUIUITests */,
