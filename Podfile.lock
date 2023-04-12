@@ -1,18 +1,37 @@
 PODS:
+  - CocoaLumberjack (3.8.0):
+    - CocoaLumberjack/Core (= 3.8.0)
+  - CocoaLumberjack/Core (3.8.0)
   - NXNavigationExtension/Sources (4.1.4)
   - NXNavigationExtension/SwiftUI (4.1.4):
     - NXNavigationExtension/Sources
+  - SVGKit (3.1.0):
+    - CocoaLumberjack (~> 3.0)
 
 DEPENDENCIES:
   - NXNavigationExtension/SwiftUI
+  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `3.x`)
 
 SPEC REPOS:
   trunk:
+    - CocoaLumberjack
     - NXNavigationExtension
 
-SPEC CHECKSUMS:
-  NXNavigationExtension: 0adad6d7e9cefc6c80b94417d315cdff73876a42
+EXTERNAL SOURCES:
+  SVGKit:
+    :branch: 3.x
+    :git: https://github.com/SVGKit/SVGKit.git
 
-PODFILE CHECKSUM: 579f36c56df96939843d173bb6e42e105aee9fec
+CHECKOUT OPTIONS:
+  SVGKit:
+    :commit: 8c290ceee19254f6d0da1940201d5efa31b48f9f
+    :git: https://github.com/SVGKit/SVGKit.git
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  NXNavigationExtension: 0adad6d7e9cefc6c80b94417d315cdff73876a42
+  SVGKit: 3c8468aab0026048532a3b27a0c81cdd939f0649
+
+PODFILE CHECKSUM: 309cd780c82cb1ea95b89682caae6c3fcb444064
 
 COCOAPODS: 1.11.3
