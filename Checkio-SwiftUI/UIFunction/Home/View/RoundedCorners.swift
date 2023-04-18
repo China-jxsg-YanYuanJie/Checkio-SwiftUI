@@ -21,7 +21,6 @@ struct RoundedCorners: View {
             let h = geometry.size.height
             SimilarShape(path:getPath(size: CGSize(width: w, height: h)))
                 .fill(self.color)
-//                .animation(.easeIn(duration: 1))
         }
     }
     private func getPath(size: CGSize) -> Path{

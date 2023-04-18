@@ -87,6 +87,7 @@ struct AffairView: View {
                             LazyHStack(spacing:20){
                                 ForEach(style.infos.indices, id: \.self) { index in
                                     AffairItemView(info: style.infos[index], deadline:index)
+                                        .animation(.easeInOut(duration: 0.5), value: style.infos[index].isAppear)
                                 }
                             }
                             .onChangeParentScrollViewOffset({
@@ -139,7 +140,7 @@ struct AffairView_Previews: PreviewProvider {
 struct AffairItemView: View {
     @State var info:TargetCardInfo
     var deadline: Int
-    @State var isAppear = false
+//    @State var isAppear = false
     var body: some View {
         VStack(alignment: .leading){
             headerCircle(info.tintColor)
@@ -158,11 +159,10 @@ struct AffairItemView: View {
         .background(
             RoundedCorners(color: .white, tl: 35, tr: 25, bl: 10, br: 10)
         )
-        .offset(x: isAppear ? 0 : 120, y: 0)
-        .opacity(isAppear ? 1 : 0)
-        .animation(.easeInOut(duration: 0.5), value: isAppear)
+        .offset(x: info.isAppear ? 0 : 120, y: 0)
+        .opacity(info.isAppear ? 1 : 0)
         .onAppear {
-            isAppear = true
+            info.isAppear = true
         }
     }
     private func headerCircle(_ color: Color = .hex("7A52F2")) -> some View{

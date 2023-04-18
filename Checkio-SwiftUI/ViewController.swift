@@ -14,7 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        UIScrollView().contentInset
     }
-
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
 
 }
 

@@ -14,10 +14,11 @@ struct ProductTabPageView: View{
         TabView(selection: $currentPage){
             ForEach(0 ..< 4) { index in
                 ScrollView(.vertical){
-                    LazyVStack(spacing:15){
+                    VStack(spacing:15){
                         ForEach(0 ..< 20){ index in
                             ProductItemView()
                                 .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                                .animation(.easeInOut(duration: 1))
                                 .shadow(color: Color.black.opacity(0.1),radius: 6,x: CGFloat(0),y: CGFloat(3))
                         }
                     }
@@ -43,17 +44,13 @@ struct ProductItemView: View{
             .frame(height:height)
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             VStack{}
-                .animation(.easeInOut(duration: 0.5), value: isHiddenB)
                 .frame(width: 100,height:isHiddenB)
         }
         .background(
             RoundedCorners(color: .white, tl: height/2, tr: 10, bl: height/2, br: 10)
         )
-        .animation(.easeInOut(duration: 1), value: isHiddenB)
         .onTapGesture {
-            withAnimation(.easeInOut(duration: 0.5)) {
-                isHiddenB = isHiddenB == 0.0 ? 100.0 : 0.0
-            }
+            isHiddenB = isHiddenB == 0.0 ? 100.0 : 0.0
         }
     }
 }
