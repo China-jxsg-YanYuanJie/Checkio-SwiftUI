@@ -28,6 +28,7 @@ enum Tab : String ,CaseIterable {
 }
 struct MainTabBarView: View {
     @State var currentTab: Tab = .product
+    @State var tabbarHidden: Bool? = false
     // MARK: Hiding Native One
     // 隐藏Native One
     init(){
@@ -40,16 +41,15 @@ struct MainTabBarView: View {
 
                 // 需要为每个标签视图应用BG
                 HomeView().tag(Tab.home)
-                
-                ProductView().tag(Tab.product)
-                
+
+                ProductView(tabbarHidden: $tabbarHidden).tag(Tab.product)
+
                 Text("Position").tag(Tab.position)
-                
-//                Text("Found").tag(Tab.found)
                 
                 Text("My").tag(Tab.my)
             }
             PathTabBar(currentTab: $currentTab)
+                .isHidden(tabbarHidden ?? false)
         }
         .ignoresSafeArea()
         .padding(.top, 0)

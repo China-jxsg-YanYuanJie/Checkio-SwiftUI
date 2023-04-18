@@ -28,7 +28,7 @@
 		9A16182529C1B20600B29550 /* CKBaseNavcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16181E29C1B20600B29550 /* CKBaseNavcViewController.swift */; };
 		9A16182629C1B20600B29550 /* CKBaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16181F29C1B20600B29550 /* CKBaseTabBarViewController.swift */; };
 		9A16182729C1B20600B29550 /* CKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16182029C1B20600B29550 /* CKBaseViewController.swift */; };
-		9A16182829C1B20600B29550 /* CKPublicColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16182229C1B20600B29550 /* CKPublicColorExtension.swift */; };
+		9A16182829C1B20600B29550 /* CKPublicExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16182229C1B20600B29550 /* CKPublicExtension.swift */; };
 		9A16182929C1B20600B29550 /* CKPublicAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16182429C1B20600B29550 /* CKPublicAppearance.swift */; };
 		9A16182B29C1B2B500B29550 /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16182A29C1B2B500B29550 /* SceneDelegateExtension.swift */; };
 		9A16182F29C1B3DD00B29550 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16182E29C1B3DD00B29550 /* MainTabBarView.swift */; };
@@ -41,6 +41,7 @@
 		9A42F4F029D019E000586E2A /* AffairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42F4EF29D019E000586E2A /* AffairView.swift */; };
 		9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */; };
 		9A7BAEA429CC5096008E6FDF /* ImageResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */; };
+		9A936C2429E94F0D00C060E3 /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A936C2329E94F0D00C060E3 /* AddProduct.swift */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,7 +93,7 @@
 		9A16181E29C1B20600B29550 /* CKBaseNavcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKBaseNavcViewController.swift; sourceTree = "<group>"; };
 		9A16181F29C1B20600B29550 /* CKBaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKBaseTabBarViewController.swift; sourceTree = "<group>"; };
 		9A16182029C1B20600B29550 /* CKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKBaseViewController.swift; sourceTree = "<group>"; };
-		9A16182229C1B20600B29550 /* CKPublicColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKPublicColorExtension.swift; sourceTree = "<group>"; };
+		9A16182229C1B20600B29550 /* CKPublicExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKPublicExtension.swift; sourceTree = "<group>"; };
 		9A16182429C1B20600B29550 /* CKPublicAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKPublicAppearance.swift; sourceTree = "<group>"; };
 		9A16182A29C1B2B500B29550 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 		9A16182E29C1B3DD00B29550 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 		9A42F4EF29D019E000586E2A /* AffairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffairView.swift; sourceTree = "<group>"; };
 		9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppResourceManager.swift; sourceTree = "<group>"; };
 		9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageResource.bundle; sourceTree = "<group>"; };
+		9A936C2329E94F0D00C060E3 /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
 		B4F79D694684752F9908AFA8 /* Pods_Checkio_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E7C2D0276965CBF7C88370 /* Pods-Checkio-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,7 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */,
-				9A16182229C1B20600B29550 /* CKPublicColorExtension.swift */,
+				9A16182229C1B20600B29550 /* CKPublicExtension.swift */,
 				9A16182429C1B20600B29550 /* CKPublicAppearance.swift */,
 			);
 			path = CKConfigureFile;
@@ -279,6 +281,7 @@
 		9A2BA76029D53B6E0067599D /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				9A936C2229E94EF800C060E3 /* NewProduct */,
 				9A2BA76329D53B8C0067599D /* View */,
 			);
 			path = Product;
@@ -319,6 +322,14 @@
 				9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		9A936C2229E94EF800C060E3 /* NewProduct */ = {
+			isa = PBXGroup;
+			children = (
+				9A936C2329E94F0D00C060E3 /* AddProduct.swift */,
+			);
+			path = NewProduct;
 			sourceTree = "<group>";
 		};
 		E9E2FDD50DCCF20055E9AB12 /* Pods */ = {
@@ -580,7 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A16182829C1B20600B29550 /* CKPublicColorExtension.swift in Sources */,
+				9A16182829C1B20600B29550 /* CKPublicExtension.swift in Sources */,
 				9A0F72AA29E5602D00A2A24D /* AnimatableDataSimilarShape.swift in Sources */,
 				9A2BA76D29D6E54F0067599D /* ProductTabPageView.swift in Sources */,
 				9A0F72AB29E5602D00A2A24D /* Path+VectorArithmetic.swift in Sources */,
@@ -589,6 +600,7 @@
 				9A16182529C1B20600B29550 /* CKBaseNavcViewController.swift in Sources */,
 				9A2BA76229D53B850067599D /* ProductView.swift in Sources */,
 				9A0F72A829E5602D00A2A24D /* Array+VectorArithmetic.swift in Sources */,
+				9A936C2429E94F0D00C060E3 /* AddProduct.swift in Sources */,
 				9A0F72AC29E5602D00A2A24D /* SimilarShape.swift in Sources */,
 				9A0F72A729E5602D00A2A24D /* Path+Length.swift in Sources */,
 				9A16182F29C1B3DD00B29550 /* MainTabBarView.swift in Sources */,

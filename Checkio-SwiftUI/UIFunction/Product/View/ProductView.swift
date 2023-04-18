@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ProductView: View {
+    @Binding var tabbarHidden: Bool?
     @State var currentPage = 0
     var body: some View {
         NavigationView{
@@ -18,13 +19,14 @@ struct ProductView: View {
                     ProductTabPageView(currentPage: $currentPage)
                 }
             }
-            .navigationBarItems(trailing: Button(action: {
-                print("点击")
-            }, label: {
+            .navigationBarItems(trailing: NavigationLink(tag: true, selection: $tabbarHidden) {
+                AddProduct()
+            } label: {
                 if let image = AppImageAssets.ic_com_add.svgImage(size: 25, color: .white){
                     Image(uiImage: image)
+                        .foregroundColor(.white)
                 }
-            }))
+            })
             .navigationTitle("所有习惯")
             .navigationBarTitleDisplayMode(.inline)
             .useNXNavigationView(onPrepareConfiguration: {
@@ -42,6 +44,10 @@ struct ProductView: View {
                     getHeaderPath().fill(Color.theme)
                 }.ignoresSafeArea()
             )
+            .onAppear{
+                tabbarHidden = false
+            }
+
         }
     }
     
@@ -54,12 +60,6 @@ struct ProductView: View {
         path.addLine(to: CGPoint(x: width, y: height))
         path.addQuadCurve(to: CGPoint(x: 0, y: height), control: CGPoint(x: width/2, y: height+50.0))
         return path
-    }
-}
-
-struct ProductView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProductView()
     }
 }
 
