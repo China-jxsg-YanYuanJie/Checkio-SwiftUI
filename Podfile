@@ -6,8 +6,8 @@ target 'Checkio-SwiftUI' do
   use_frameworks!
 
   # Pods for Checkio-SwiftUI
-  pod 'NXNavigationExtension/SwiftUI'
-  pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '3.x'
+#  pod 'NXNavigationExtension/SwiftUI'
+#  pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '3.x'
   target 'Checkio-SwiftUITests' do
     inherit! :search_paths
     # Pods for testing

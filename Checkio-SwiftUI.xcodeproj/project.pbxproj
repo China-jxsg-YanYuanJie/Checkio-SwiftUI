@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		01FEB5D4E9133EDF2DD5E81C /* Pods_Checkio_SwiftUI_Checkio_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7BED10BAD38FCA8BC026A0 /* Pods_Checkio_SwiftUI_Checkio_SwiftUIUITests.framework */; };
 		17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F79D694684752F9908AFA8 /* Pods_Checkio_SwiftUI.framework */; };
-		9A0F72A729E5602D00A2A24D /* Path+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A129E5602D00A2A24D /* Path+Length.swift */; };
-		9A0F72A829E5602D00A2A24D /* Array+VectorArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A229E5602D00A2A24D /* Array+VectorArithmetic.swift */; };
-		9A0F72A929E5602D00A2A24D /* InterpolatedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A329E5602D00A2A24D /* InterpolatedShape.swift */; };
-		9A0F72AA29E5602D00A2A24D /* AnimatableDataSimilarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A429E5602D00A2A24D /* AnimatableDataSimilarShape.swift */; };
-		9A0F72AB29E5602D00A2A24D /* Path+VectorArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A529E5602D00A2A24D /* Path+VectorArithmetic.swift */; };
-		9A0F72AC29E5602D00A2A24D /* SimilarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F72A629E5602D00A2A24D /* SimilarShape.swift */; };
 		9A1617E929C1AF6F00B29550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617E829C1AF6F00B29550 /* AppDelegate.swift */; };
 		9A1617EB29C1AF7000B29550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617EA29C1AF7000B29550 /* SceneDelegate.swift */; };
 		9A1617ED29C1AF7000B29550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1617EC29C1AF7000B29550 /* ViewController.swift */; };
@@ -42,6 +36,11 @@
 		9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */; };
 		9A7BAEA429CC5096008E6FDF /* ImageResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */; };
 		9A936C2429E94F0D00C060E3 /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A936C2329E94F0D00C060E3 /* AddProduct.swift */; };
+		9A936C8529EFD36300C060E3 /* YYJTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A936C8429EFD36200C060E3 /* YYJTextfield.swift */; };
+		9A936C8829EFDBAA00C060E3 /* SwiftUIPathAnimations in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C8729EFDBAA00C060E3 /* SwiftUIPathAnimations */; };
+		9A936C8E29EFDC0400C060E3 /* NXNavigationExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C8D29EFDC0400C060E3 /* NXNavigationExtension */; };
+		9A936C9029EFDC0400C060E3 /* NXNavigationExtensionSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C8F29EFDC0400C060E3 /* NXNavigationExtensionSwiftUI */; };
+		9A936C9329EFDC2000C060E3 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C9229EFDC2000C060E3 /* SVGKitSwift */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,12 +69,6 @@
 		4F34B0DDE0C87F1BAE4831DD /* Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		752E5D1732B5E219FF6DBCBF /* Pods-Checkio-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0F729929E515DE00A2A24D /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = ci_post_clone.sh; path = ci_scripts/ci_post_clone.sh; sourceTree = "<group>"; };
-		9A0F72A129E5602D00A2A24D /* Path+Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+Length.swift"; sourceTree = "<group>"; };
-		9A0F72A229E5602D00A2A24D /* Array+VectorArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+VectorArithmetic.swift"; sourceTree = "<group>"; };
-		9A0F72A329E5602D00A2A24D /* InterpolatedShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpolatedShape.swift; sourceTree = "<group>"; };
-		9A0F72A429E5602D00A2A24D /* AnimatableDataSimilarShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableDataSimilarShape.swift; sourceTree = "<group>"; };
-		9A0F72A529E5602D00A2A24D /* Path+VectorArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+VectorArithmetic.swift"; sourceTree = "<group>"; };
-		9A0F72A629E5602D00A2A24D /* SimilarShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimilarShape.swift; sourceTree = "<group>"; };
 		9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkio-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1617E829C1AF6F00B29550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A1617EA29C1AF7000B29550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +100,7 @@
 		9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppResourceManager.swift; sourceTree = "<group>"; };
 		9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageResource.bundle; sourceTree = "<group>"; };
 		9A936C2329E94F0D00C060E3 /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
+		9A936C8429EFD36200C060E3 /* YYJTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYJTextfield.swift; sourceTree = "<group>"; };
 		B4F79D694684752F9908AFA8 /* Pods_Checkio_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E7C2D0276965CBF7C88370 /* Pods-Checkio-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +111,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A936C8829EFDBAA00C060E3 /* SwiftUIPathAnimations in Frameworks */,
+				9A936C8E29EFDC0400C060E3 /* NXNavigationExtension in Frameworks */,
+				9A936C9329EFDC2000C060E3 /* SVGKitSwift in Frameworks */,
+				9A936C9029EFDC0400C060E3 /* NXNavigationExtensionSwiftUI in Frameworks */,
 				17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,22 +151,8 @@
 		9A0F729F29E5600400A2A24D /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				9A0F72A029E5602D00A2A24D /* SwiftUIPathAnimations */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		9A0F72A029E5602D00A2A24D /* SwiftUIPathAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				9A0F72A129E5602D00A2A24D /* Path+Length.swift */,
-				9A0F72A229E5602D00A2A24D /* Array+VectorArithmetic.swift */,
-				9A0F72A329E5602D00A2A24D /* InterpolatedShape.swift */,
-				9A0F72A429E5602D00A2A24D /* AnimatableDataSimilarShape.swift */,
-				9A0F72A529E5602D00A2A24D /* Path+VectorArithmetic.swift */,
-				9A0F72A629E5602D00A2A24D /* SimilarShape.swift */,
-			);
-			path = SwiftUIPathAnimations;
 			sourceTree = "<group>";
 		};
 		9A1617DC29C1AF6F00B29550 = {
@@ -234,6 +218,7 @@
 		9A16181829C1B01300B29550 /* UIFunction */ = {
 			isa = PBXGroup;
 			children = (
+				9A936C7B29EFBDB100C060E3 /* PublicCustomView */,
 				9A2BA76029D53B6E0067599D /* Product */,
 				9A16181929C1B01800B29550 /* Home */,
 				9A16182E29C1B3DD00B29550 /* MainTabBarView.swift */,
@@ -332,6 +317,14 @@
 			path = NewProduct;
 			sourceTree = "<group>";
 		};
+		9A936C7B29EFBDB100C060E3 /* PublicCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9A936C8429EFD36200C060E3 /* YYJTextfield.swift */,
+			);
+			path = PublicCustomView;
+			sourceTree = "<group>";
+		};
 		E9E2FDD50DCCF20055E9AB12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,7 +349,6 @@
 				9A1617E129C1AF6F00B29550 /* Sources */,
 				9A1617E229C1AF6F00B29550 /* Frameworks */,
 				9A1617E329C1AF6F00B29550 /* Resources */,
-				E4AE838BC7C1D61733DF6E69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +356,10 @@
 			);
 			name = "Checkio-SwiftUI";
 			packageProductDependencies = (
+				9A936C8729EFDBAA00C060E3 /* SwiftUIPathAnimations */,
+				9A936C8D29EFDC0400C060E3 /* NXNavigationExtension */,
+				9A936C8F29EFDC0400C060E3 /* NXNavigationExtensionSwiftUI */,
+				9A936C9229EFDC2000C060E3 /* SVGKitSwift */,
 			);
 			productName = "Checkio-SwiftUI";
 			productReference = 9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */;
@@ -396,7 +392,6 @@
 				9A16180129C1AF7200B29550 /* Sources */,
 				9A16180229C1AF7200B29550 /* Frameworks */,
 				9A16180329C1AF7200B29550 /* Resources */,
-				B6E9457E78A41943421C9E28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,6 +438,9 @@
 			);
 			mainGroup = 9A1617DC29C1AF6F00B29550;
 			packageReferences = (
+				9A936C8629EFDBAA00C060E3 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */,
+				9A936C8C29EFDC0400C060E3 /* XCRemoteSwiftPackageReference "NXNavigationExtension" */,
+				9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit.git" */,
 			);
 			productRefGroup = 9A1617E629C1AF6F00B29550 /* Products */;
 			projectDirPath = "";
@@ -528,23 +526,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B6E9457E78A41943421C9E28 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests/Pods-Checkio-SwiftUI-Checkio-SwiftUIUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D7054A2A46042BDC406476E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,23 +548,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E4AE838BC7C1D61733DF6E69 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -592,24 +556,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A16182829C1B20600B29550 /* CKPublicExtension.swift in Sources */,
-				9A0F72AA29E5602D00A2A24D /* AnimatableDataSimilarShape.swift in Sources */,
 				9A2BA76D29D6E54F0067599D /* ProductTabPageView.swift in Sources */,
-				9A0F72AB29E5602D00A2A24D /* Path+VectorArithmetic.swift in Sources */,
 				9A1617ED29C1AF7000B29550 /* ViewController.swift in Sources */,
 				9A42F4EC29D018F600586E2A /* CircleProgress.swift in Sources */,
 				9A16182529C1B20600B29550 /* CKBaseNavcViewController.swift in Sources */,
 				9A2BA76229D53B850067599D /* ProductView.swift in Sources */,
-				9A0F72A829E5602D00A2A24D /* Array+VectorArithmetic.swift in Sources */,
 				9A936C2429E94F0D00C060E3 /* AddProduct.swift in Sources */,
-				9A0F72AC29E5602D00A2A24D /* SimilarShape.swift in Sources */,
-				9A0F72A729E5602D00A2A24D /* Path+Length.swift in Sources */,
 				9A16182F29C1B3DD00B29550 /* MainTabBarView.swift in Sources */,
 				9A42F4EA29D0189A00586E2A /* PeriodView.swift in Sources */,
 				9A2BA76B29D6E50C0067599D /* ProductHeaderTabView.swift in Sources */,
 				9A16182729C1B20600B29550 /* CKBaseViewController.swift in Sources */,
 				9A16182629C1B20600B29550 /* CKBaseTabBarViewController.swift in Sources */,
 				9A16181B29C1B02E00B29550 /* HomeView.swift in Sources */,
-				9A0F72A929E5602D00A2A24D /* InterpolatedShape.swift in Sources */,
+				9A936C8529EFD36300C060E3 /* YYJTextfield.swift in Sources */,
 				9A16182929C1B20600B29550 /* CKPublicAppearance.swift in Sources */,
 				9A42F4EE29D0198900586E2A /* RoundedCorners.swift in Sources */,
 				9A16182B29C1B2B500B29550 /* SceneDelegateExtension.swift in Sources */,
@@ -968,6 +927,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A936C8629EFDBAA00C060E3 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adellibovi/SwiftUI-PathAnimations";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9A936C8C29EFDC0400C060E3 /* XCRemoteSwiftPackageReference "NXNavigationExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/l1Dan/NXNavigationExtension";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
+			requirement = {
+				branch = 3.x;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A936C8729EFDBAA00C060E3 /* SwiftUIPathAnimations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A936C8629EFDBAA00C060E3 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */;
+			productName = SwiftUIPathAnimations;
+		};
+		9A936C8D29EFDC0400C060E3 /* NXNavigationExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A936C8C29EFDC0400C060E3 /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
+			productName = NXNavigationExtension;
+		};
+		9A936C8F29EFDC0400C060E3 /* NXNavigationExtensionSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A936C8C29EFDC0400C060E3 /* XCRemoteSwiftPackageReference "NXNavigationExtension" */;
+			productName = NXNavigationExtensionSwiftUI;
+		};
+		9A936C9229EFDC2000C060E3 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit.git" */;
+			productName = SVGKitSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A1617DD29C1AF6F00B29550 /* Project object */;
 }
