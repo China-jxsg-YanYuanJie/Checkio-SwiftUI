@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftUIPathAnimations
 
 struct RoundedCorners: View {
     var color: Color = .blue
