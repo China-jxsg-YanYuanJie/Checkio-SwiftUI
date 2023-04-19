@@ -12,17 +12,20 @@ struct ProductView: View {
     @Binding var tabbarHidden: Bool?
     @State var currentPage = 0
     var body: some View {
-        NavigationView{
+        NavigationView {
             GeometryReader { proxy in
-                VStack{
+                VStack {
                     ProductHeaderTabView(currentPage: $currentPage)
                     ProductTabPageView(currentPage: $currentPage)
                 }
             }
             .navigationBarItems(trailing: NavigationLink(tag: true, selection: $tabbarHidden) {
                 AddProduct()
+                    .onDisappear {
+                        tabbarHidden = false
+                    }
             } label: {
-                if let image = AppImageAssets.ic_com_add.svgImage(size: 25, color: .white){
+                if let image = AppImageAssets.ic_com_add.svgImage(size: 25, color: .white) {
                     Image(uiImage: image)
                         .foregroundColor(.white)
                 }
@@ -35,7 +38,7 @@ struct ProductView: View {
                 /// item颜色设置
                 $0.navigationBarAppearance.tintColor = .white
                 /// 标题颜色设置
-                $0.navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font:UIFont.boldSystemFont(ofSize: 22)]
+                $0.navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 22)]
 
             })
             .background(
@@ -44,10 +47,6 @@ struct ProductView: View {
                     getHeaderPath().fill(Color.theme)
                 }.ignoresSafeArea()
             )
-            .onAppear{
-                tabbarHidden = false
-            }
-
         }
     }
     

@@ -42,6 +42,7 @@
 		9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */; };
 		9A7BAEA429CC5096008E6FDF /* ImageResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */; };
 		9A936C2429E94F0D00C060E3 /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A936C2329E94F0D00C060E3 /* AddProduct.swift */; };
+		9A936C8529EFD36300C060E3 /* YYJTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A936C8429EFD36200C060E3 /* YYJTextfield.swift */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		9A7BAE9829CC4DD0008E6FDF /* AppResourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppResourceManager.swift; sourceTree = "<group>"; };
 		9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageResource.bundle; sourceTree = "<group>"; };
 		9A936C2329E94F0D00C060E3 /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
+		9A936C8429EFD36200C060E3 /* YYJTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYJTextfield.swift; sourceTree = "<group>"; };
 		B4F79D694684752F9908AFA8 /* Pods_Checkio_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E7C2D0276965CBF7C88370 /* Pods-Checkio-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 		9A16181829C1B01300B29550 /* UIFunction */ = {
 			isa = PBXGroup;
 			children = (
+				9A936C7B29EFBDB100C060E3 /* PublicCustomView */,
 				9A2BA76029D53B6E0067599D /* Product */,
 				9A16181929C1B01800B29550 /* Home */,
 				9A16182E29C1B3DD00B29550 /* MainTabBarView.swift */,
@@ -330,6 +333,14 @@
 				9A936C2329E94F0D00C060E3 /* AddProduct.swift */,
 			);
 			path = NewProduct;
+			sourceTree = "<group>";
+		};
+		9A936C7B29EFBDB100C060E3 /* PublicCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9A936C8429EFD36200C060E3 /* YYJTextfield.swift */,
+			);
+			path = PublicCustomView;
 			sourceTree = "<group>";
 		};
 		E9E2FDD50DCCF20055E9AB12 /* Pods */ = {
@@ -610,6 +621,7 @@
 				9A16182629C1B20600B29550 /* CKBaseTabBarViewController.swift in Sources */,
 				9A16181B29C1B02E00B29550 /* HomeView.swift in Sources */,
 				9A0F72A929E5602D00A2A24D /* InterpolatedShape.swift in Sources */,
+				9A936C8529EFD36300C060E3 /* YYJTextfield.swift in Sources */,
 				9A16182929C1B20600B29550 /* CKPublicAppearance.swift in Sources */,
 				9A42F4EE29D0198900586E2A /* RoundedCorners.swift in Sources */,
 				9A16182B29C1B2B500B29550 /* SceneDelegateExtension.swift in Sources */,
