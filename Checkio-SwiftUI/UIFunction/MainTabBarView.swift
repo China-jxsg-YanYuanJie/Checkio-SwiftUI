@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftUIPathAnimations
 
 enum Tab : String ,CaseIterable {
     case home = "Home"
