@@ -41,6 +41,10 @@
 		9A936C8E29EFDC0400C060E3 /* NXNavigationExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C8D29EFDC0400C060E3 /* NXNavigationExtension */; };
 		9A936C9029EFDC0400C060E3 /* NXNavigationExtensionSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C8F29EFDC0400C060E3 /* NXNavigationExtensionSwiftUI */; };
 		9A936C9329EFDC2000C060E3 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A936C9229EFDC2000C060E3 /* SVGKitSwift */; };
+		9AB5931729F78423003074B4 /* YYJTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5931629F78423003074B4 /* YYJTextView.swift */; };
+		9AB5931A29F7A8F2003074B4 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = 9AB5931929F7A8F2003074B4 /* TextView */; };
+		9AE1E32729F140C500A252B8 /* YYJAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE1E32629F140C500A252B8 /* YYJAlertView.swift */; };
+		9AE1E32929F1427F00A252B8 /* CKStyleIconSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE1E32829F1427F00A252B8 /* CKStyleIconSelectedView.swift */; };
 		A0822C0E277AE7C5968FCB06 /* Pods_Checkio_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +105,9 @@
 		9A7BAEA329CC5096008E6FDF /* ImageResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageResource.bundle; sourceTree = "<group>"; };
 		9A936C2329E94F0D00C060E3 /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
 		9A936C8429EFD36200C060E3 /* YYJTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYJTextfield.swift; sourceTree = "<group>"; };
+		9AB5931629F78423003074B4 /* YYJTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYJTextView.swift; sourceTree = "<group>"; };
+		9AE1E32629F140C500A252B8 /* YYJAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYJAlertView.swift; sourceTree = "<group>"; };
+		9AE1E32829F1427F00A252B8 /* CKStyleIconSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKStyleIconSelectedView.swift; sourceTree = "<group>"; };
 		B4F79D694684752F9908AFA8 /* Pods_Checkio_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8D3747B1DB01ED6A05E642 /* Pods_Checkio_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkio_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E7C2D0276965CBF7C88370 /* Pods-Checkio-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkio-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Checkio-SwiftUI/Pods-Checkio-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +122,7 @@
 				9A936C8E29EFDC0400C060E3 /* NXNavigationExtension in Frameworks */,
 				9A936C9329EFDC2000C060E3 /* SVGKitSwift in Frameworks */,
 				9A936C9029EFDC0400C060E3 /* NXNavigationExtensionSwiftUI in Frameworks */,
+				9AB5931A29F7A8F2003074B4 /* TextView in Frameworks */,
 				17577404B7E35C1CFABCA2E8 /* Pods_Checkio_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				9A936C2329E94F0D00C060E3 /* AddProduct.swift */,
+				9AE1E32829F1427F00A252B8 /* CKStyleIconSelectedView.swift */,
 			);
 			path = NewProduct;
 			sourceTree = "<group>";
@@ -321,6 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				9A936C8429EFD36200C060E3 /* YYJTextfield.swift */,
+				9AE1E32629F140C500A252B8 /* YYJAlertView.swift */,
+				9AB5931629F78423003074B4 /* YYJTextView.swift */,
 			);
 			path = PublicCustomView;
 			sourceTree = "<group>";
@@ -360,6 +371,7 @@
 				9A936C8D29EFDC0400C060E3 /* NXNavigationExtension */,
 				9A936C8F29EFDC0400C060E3 /* NXNavigationExtensionSwiftUI */,
 				9A936C9229EFDC2000C060E3 /* SVGKitSwift */,
+				9AB5931929F7A8F2003074B4 /* TextView */,
 			);
 			productName = "Checkio-SwiftUI";
 			productReference = 9A1617E529C1AF6F00B29550 /* Checkio-SwiftUI.app */;
@@ -440,7 +452,8 @@
 			packageReferences = (
 				9A936C8629EFDBAA00C060E3 /* XCRemoteSwiftPackageReference "SwiftUI-PathAnimations" */,
 				9A936C8C29EFDC0400C060E3 /* XCRemoteSwiftPackageReference "NXNavigationExtension" */,
-				9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit.git" */,
+				9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit" */,
+				9AB5931829F7A8F2003074B4 /* XCRemoteSwiftPackageReference "TextView" */,
 			);
 			productRefGroup = 9A1617E629C1AF6F00B29550 /* Products */;
 			projectDirPath = "";
@@ -563,16 +576,19 @@
 				9A2BA76229D53B850067599D /* ProductView.swift in Sources */,
 				9A936C2429E94F0D00C060E3 /* AddProduct.swift in Sources */,
 				9A16182F29C1B3DD00B29550 /* MainTabBarView.swift in Sources */,
+				9AB5931729F78423003074B4 /* YYJTextView.swift in Sources */,
 				9A42F4EA29D0189A00586E2A /* PeriodView.swift in Sources */,
 				9A2BA76B29D6E50C0067599D /* ProductHeaderTabView.swift in Sources */,
 				9A16182729C1B20600B29550 /* CKBaseViewController.swift in Sources */,
 				9A16182629C1B20600B29550 /* CKBaseTabBarViewController.swift in Sources */,
 				9A16181B29C1B02E00B29550 /* HomeView.swift in Sources */,
 				9A936C8529EFD36300C060E3 /* YYJTextfield.swift in Sources */,
+				9AE1E32729F140C500A252B8 /* YYJAlertView.swift in Sources */,
 				9A16182929C1B20600B29550 /* CKPublicAppearance.swift in Sources */,
 				9A42F4EE29D0198900586E2A /* RoundedCorners.swift in Sources */,
 				9A16182B29C1B2B500B29550 /* SceneDelegateExtension.swift in Sources */,
 				9A1617E929C1AF6F00B29550 /* AppDelegate.swift in Sources */,
+				9AE1E32929F1427F00A252B8 /* CKStyleIconSelectedView.swift in Sources */,
 				9A1617EB29C1AF7000B29550 /* SceneDelegate.swift in Sources */,
 				9A7BAE9929CC4DD0008E6FDF /* AppResourceManager.swift in Sources */,
 				9A42F4F029D019E000586E2A /* AffairView.swift in Sources */,
@@ -945,11 +961,19 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit.git" */ = {
+		9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
 			requirement = {
 				branch = 3.x;
+				kind = branch;
+			};
+		};
+		9AB5931829F7A8F2003074B4 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kenmueller/TextView";
+			requirement = {
+				branch = master;
 				kind = branch;
 			};
 		};
@@ -973,8 +997,13 @@
 		};
 		9A936C9229EFDC2000C060E3 /* SVGKitSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit.git" */;
+			package = 9A936C9129EFDC2000C060E3 /* XCRemoteSwiftPackageReference "SVGKit" */;
 			productName = SVGKitSwift;
+		};
+		9AB5931929F7A8F2003074B4 /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AB5931829F7A8F2003074B4 /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

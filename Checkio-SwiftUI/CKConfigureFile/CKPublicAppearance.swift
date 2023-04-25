@@ -9,6 +9,11 @@
 import UIKit
 import Photos
 import SwiftUI
+
+/// 系统主题色的hex
+public let appThemeColorHex = "6460DC"
+
+
 class CKPublicAppearance: NSObject {
     public static let screenWidth = UIScreen.main.bounds.size.width
     public static let screenHeight = UIScreen.main.bounds.size.height

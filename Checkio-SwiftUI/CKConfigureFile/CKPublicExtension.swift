@@ -58,11 +58,22 @@ public extension UIColor {
     var toColor: Color{
         return Color(uiColor: self)
     }
+    var rgba: (red: CGFloat,
+                      green: CGFloat,
+                      blue: CGFloat,
+                      alpha: CGFloat) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (red, green, blue, alpha)
+    }
 }
 extension Color{
     /// 主题色
     static var theme: Color{
-        return Color(uiColor: UIColor(hex: "6460DC"))
+        return Color(uiColor: UIColor(hex: appThemeColorHex))
     }
     /// 用Hex创建Color
     static func hex(_ string: String, alpha: CGFloat = 1.0) -> Color{
@@ -118,5 +129,42 @@ fileprivate struct HiddenModifier: ViewModifier {
                 content
             }
         }
+    }
+}
+
+/*
+    下面是用于自定弹窗的配置
+ */
+
+struct ViewControllerHolder{
+    weak var value: UIViewController?
+}
+
+struct ViewControllerKey: EnvironmentKey{
+    static var defaultValue: ViewControllerHolder{
+        return ViewControllerHolder(value: UIApplication.shared.keyWindow?.rootViewController)
+    }
+}
+
+extension EnvironmentValues{
+    var viewController: UIViewController?{
+        get{
+            self[ViewControllerKey.self].value
+        }
+        set{
+            self[ViewControllerKey.self].value = newValue
+        }
+    }
+}
+
+extension UIViewController{
+    /// 自定义弹窗
+    func present<Content: View>(@ViewBuilder builder: () -> Content) {
+        let toPresent = UIHostingController(rootView: AnyView(EmptyView()))
+        toPresent.modalPresentationStyle = .overCurrentContext
+        toPresent.modalTransitionStyle = .crossDissolve
+        toPresent.view.backgroundColor = .clear
+        toPresent.rootView = AnyView(builder().environment(\.viewController, toPresent))
+        present(toPresent, animated: false, completion: .none)
     }
 }
